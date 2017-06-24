@@ -1,5 +1,8 @@
 from scapy.all import *
 
-#p = IP(dst = 'www.somesite.ex') / TCP(dport = 80) / Raw(b'Some raw bytes')
-# to see packet content as bytes use bytes(p) not str(p)
-#sr1(p)
+p = IP(dst = 'koyama.me') / TCP(dport = 80) / Raw(b'00000000')
+sr1(p)
+
+'''
+this is sample code on official web site
+'''
